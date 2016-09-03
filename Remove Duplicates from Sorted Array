@@ -14,7 +14,7 @@ Subscribe to see which companies asked this question
     public int removeDuplicates(int[] nums) {
         if(nums.length == 0) return 0;
         int i=0;
-        //设置两个标记，对数组进行遍历，如数组中连续两个数不相等，则两个标记同时前移，如果不相等，计数的不移动，遍历数组的移动。
+        //设置两个标记，对数组进行遍历，如数组中连续两个数不相等，则两个标记同时前移，如果相等，计数的不移动，遍历数组的移动。
         for(int j = 1;j < nums.length;j++){
             if(nums[j] != nums[i]){ 
                 i++;
